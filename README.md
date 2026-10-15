@@ -1,16 +1,23 @@
 # Nikhil Kshirasagar — Personal Portfolio Website
 
-A modern, high-performance personal brand and developer portfolio website for **Nikhil Kshirasagar** — Software Engineer specializing in Backend Systems, Full-Stack Development, and AI-Integrated Applications.
+A modern, responsive personal portfolio website showcasing **Nikhil Kshirasagar**, a Software Engineer specializing in Backend Systems, Full-Stack Development, and AI-Integrated Applications.
 
-Built with **React 19**, **Vite**, **Tailwind CSS**, **Framer Motion**, and **Lucide Icons**, following the layout, styling, and visual identity of the reference design.
+Built with **React 19, Vite, Tailwind CSS, Framer Motion, and Lucide React**, featuring a dark visual theme, interactive project showcases, animated role transitions, and responsive layouts.
+
+🌐 **Live Portfolio:** [nikhil-kshirasagar-portfolio.netlify.app](https://nikhil-kshirasagar-portfolio.netlify.app/)
 
 ---
 
-## 🚀 Live Preview & Architecture
+## 🚀 Live Preview & Features
 
-- **Visual Style:** Minimalist dark mode (`#050505` / `#05070d`) with subtle ambient gradients, cursor glow, interactive spotlight cards, and smooth scroll navigation.
-- **Responsive Viewports:** Tested and optimized for Mobile (320px–480px), Tablet (481px–768px), Laptop (769px–1280px), and Desktop (1281px+).
-- **SEO & Accessibility:** Fully semantic HTML5 landmarks, meta tags, Open Graph / Twitter previews, dynamic year generation, and accessible form controls.
+- **Visual Style:** Dark theme with subtle ambient gradients, cyan and violet accents, interactive cards, and smooth scrolling.
+- **Responsive Design:** Layouts optimized for mobile, tablet, laptop, and desktop screens.
+- **Interactive Navigation:** Smooth navigation between portfolio sections.
+- **Project Showcase:** Eight projects with technology stacks, GitHub repositories, and project case studies.
+- **Resume Integration:** Resume viewing and download functionality using the included PDF.
+- **Contact Section:** Social profiles and direct contact links.
+- **SEO & Accessibility:** Semantic HTML, page metadata, social sharing metadata, and accessible interface controls.
+- **Deployment:** Hosted on Netlify with GitHub-based source control.
 
 ---
 
@@ -18,11 +25,13 @@ Built with **React 19**, **Vite**, **Tailwind CSS**, **Framer Motion**, and **Lu
 
 | Layer | Technologies |
 | :--- | :--- |
-| **Framework** | [React 19](https://react.dev/) + [Vite](https://vitejs.dev/) |
-| **Styling** | [Tailwind CSS v4](https://tailwindcss.com/) + PostCSS + Custom CSS tokens |
-| **Motion** | [Framer Motion](https://www.framer.com/motion/) |
+| **Frontend Framework** | [React 19](https://react.dev/), [Vite](https://vite.dev/) |
+| **Styling** | [Tailwind CSS](https://tailwindcss.com/), PostCSS, Custom CSS |
+| **Animations** | [Framer Motion](https://motion.dev/) |
 | **Icons** | [Lucide React](https://lucide.dev/) |
-| **Hosting** | [Netlify](https://www.netlify.com/) (configured via `netlify.toml`) |
+| **Development Tools** | JavaScript, ESLint, npm |
+| **Version Control** | [Git](https://git-scm.com/), [GitHub](https://github.com/) |
+| **Hosting** | [Netlify](https://www.netlify.com/) |
 
 ---
 
@@ -31,146 +40,284 @@ Built with **React 19**, **Vite**, **Tailwind CSS**, **Framer Motion**, and **Lu
 ```text
 portfolio/
 ├── public/
-│   ├── favicon.svg                   # Custom NK monogram favicon
-│   ├── og-image.svg                  # Open Graph social sharing image
-│   ├── Nikhil_Kshirasagar_Resume.pdf # Printable recruiter resume PDF
+│   ├── favicon.svg
+│   ├── og-image.svg
+│   ├── Nikhil_Kshirasagar_Resume.pdf
 │   ├── resume/
 │   │   └── Nikhil_Kshirasagar_Resume.pdf
 │   └── images/
 │       └── projects/
-│           ├── stockpilot.svg        # StockPilot AI UI preview
-│           ├── finsight.svg          # FinSight UI preview
-│           └── code-editor-pro.svg   # Code Editor Pro Web IDE preview
+│           ├── stockpilot.svg
+│           ├── finsight.svg
+│           ├── code-editor-pro.svg
+│           ├── smartaigent.svg
+│           ├── codeforge-ai.svg
+│           ├── ijaae.svg
+│           ├── taskpulse.svg
+│           └── graph-visualizer.svg
 ├── src/
 │   ├── components/
-│   │   ├── About.jsx                 # About section, focus areas & verified stats
-│   │   ├── AnimatedSection.jsx       # Smooth viewport entry wrapper
-│   │   ├── BackgroundEffects.jsx     # Ambient background mesh & gradient orbs
-│   │   ├── Contact.jsx               # Validated contact form & direct reach channels
-│   │   ├── CursorGlow.jsx            # Dynamic spring cursor glow follower
-│   │   ├── Education.jsx             # Degree, institution, CGPA & academic rigor
-│   │   ├── Experience.jsx            # Internship, community leadership & journey timeline
-│   │   ├── Footer.jsx                # Quick links, social handles & dynamic copyright
-│   │   ├── Hero.jsx                  # Main introduction, rotating typewriter & core expertise
-│   │   ├── Navbar.jsx                # Responsive navbar with desktop pill & mobile menu
-│   │   ├── Projects.jsx              # Featured products with 15-point case study accordions
-│   │   ├── Resume.jsx                # Recruiter snapshot card & download/preview actions
-│   │   ├── RotatingRole.jsx          # Lightweight typewriter role rotator
-│   │   ├── ScrollProgress.jsx        # Spring scroll progress indicator bar
-│   │   ├── SectionHeader.jsx         # Uniform typography & eyebrow headings
-│   │   └── SpotlightCard.jsx         # Mouse-tracking interactive glass card
+│   │   ├── About.jsx
+│   │   ├── AnimatedSection.jsx
+│   │   ├── BackgroundEffects.jsx
+│   │   ├── Contact.jsx
+│   │   ├── CursorGlow.jsx
+│   │   ├── Education.jsx
+│   │   ├── Experience.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Resume.jsx
+│   │   ├── RotatingRole.jsx
+│   │   ├── ScrollProgress.jsx
+│   │   ├── SectionHeader.jsx
+│   │   └── SpotlightCard.jsx
 │   ├── data/
-│   │   └── portfolio.js              # Centralized data store for all portfolio content
-│   ├── App.css                       # Design tokens, typography & button styles
-│   ├── App.jsx                       # Root component composition
-│   ├── index.css                     # Global base styles
-│   └── main.jsx                      # App entry point
-├── .env.example                      # Safe template for optional external services
-├── netlify.toml                      # Netlify build and SPA redirect settings
+│   │   └── portfolio.js
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .env.example
+├── .gitignore
+├── netlify.toml
 ├── package.json
 └── vite.config.js
 ```
+
+*The tree above describes the intended project organization; individual filenames may differ slightly in the current implementation.*
 
 ---
 
 ## 💻 Getting Started Locally
 
-### 1. Prerequisites
-- **Node.js**: v20+ (recommended v20.18+ or v22+)
-- **npm**: v10+
+### Prerequisites
 
-### 2. Installation
-Clone the repository and install dependencies:
+- **Node.js:** A version supported by the project's dependencies; Node.js 20+ is recommended.
+- **npm:** Installed with Node.js.
+- **Git:** Required to clone the repository.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/nikhhh12/nikhil_portfolio.git
+cd nikhil_portfolio
+```
+
+### 2. Install Dependencies
+
 ```bash
 npm install
 ```
 
-### 3. Run Development Server
+### 3. Start the Development Server
+
 ```bash
 npm run dev
 ```
-Open your browser at `http://localhost:5173`.
+
+Open the local URL displayed in your terminal. Vite commonly uses `http://localhost:5173`.
 
 ### 4. Run Linting
+
 ```bash
 npm run lint
 ```
 
-### 5. Production Build
+### 5. Create a Production Build
+
 ```bash
 npm run build
 ```
-The optimized bundle will be generated in the `dist/` directory.
 
-### 6. Preview Production Build
+The optimized production files are generated in the `dist/` directory.
+
+### 6. Preview the Production Build
+
 ```bash
 npm run preview
 ```
 
 ---
 
-## ✏️ Customization Guide
+## 💼 Featured Projects
 
-### 1. Updating Portfolio Content
-All text, skills, projects, work experience, and personal links are centralized in a single file:
-👉 [`src/data/portfolio.js`](file:///Users/nikhilkshirasagar/portfolio/src/data/portfolio.js)
+### 1. StockPilot AI
 
-- **Personal Details:** Edit the `profile` object (`name`, `role`, `email`, `phone`, `location`, `github`, `linkedin`, `leetcode`).
-- **Skills Groups:** Update the `skillGroups` array to add or categorize technologies.
-- **Projects:** Add or edit entries in the `projects` array. Each project includes title, description, verified metrics, tech stack, and a 15-point product case study.
-- **Work Experience & Leadership:** Update the `experience`, `leadership`, and `education` arrays.
+A full-stack inventory management application focused on inventory workflows, secure authentication, database management, and AI-assisted functionality.
 
-### 2. Updating Resume PDF
-Place your updated resume PDF in:
-- `public/resume/Nikhil_Kshirasagar_Resume.pdf` (or `public/Nikhil_Kshirasagar_Resume.pdf`).
+- **Technologies:** Java 17, Spring Boot, MySQL, Spring Security, JWT, React, TypeScript, Redis, Spring AI.
+- **Repository:** [StockPilot](https://github.com/nikhhh12/stockpilot)
 
-### 3. Adding Project Screenshots
-To replace the SVG previews with live UI screenshots:
-1. Place image files (PNG/JPG/WebP/SVG) in `public/images/projects/`.
-2. Update the `image` field of the project in `src/data/portfolio.js`.
+### 2. FinSight
 
-### 4. Configuring the Contact Form
-By default, the contact form submits via [FormSubmit](https://formsubmit.co/) directly to `nikkhil.theguru@gmail.com` with client-side validation and duplicate-submission protection.
-- If network requests fail, the form automatically offers a 1-click fallback to the user's default email client (`mailto:`).
-- For EmailJS integration, copy `.env.example` to `.env` and fill in:
-  ```env
-  VITE_EMAILJS_SERVICE_ID=your_service_id
-  VITE_EMAILJS_TEMPLATE_ID=your_template_id
-  VITE_EMAILJS_PUBLIC_KEY=your_public_key
-  ```
+A financial data aggregation project designed to organize financial information and provide an interface for exploring financial insights.
+
+- **Repository:** [FinSight — Financial Data Aggregator](https://github.com/nikhhh12/FinSight-financial-data-aggregator)
+
+### 3. Code Editor Pro
+
+A browser-based code editor project focused on interactive coding and the developer experience.
+
+- **Repository:** [Code Editor Pro](https://github.com/nikhhh12/code-editor-pro)
+
+### 4. SmartAIgent
+
+An AI-assisted application featuring structured workflows, data validation, and human approval.
+
+- **Technologies:** Next.js, React, TypeScript, Google Gemini, Zod, SQLite, Drizzle ORM, Vitest.
+- **Repository:** [SmartAIgent](https://github.com/nikhhh12/smartAIgent)
+
+### 5. CodeForge AI
+
+An AI-powered competitive programming and coding mentorship platform featuring coding tools and AI-assisted problem-solving capabilities.
+
+- **Technologies:** React, Vite, Tailwind CSS, Node.js, Express.js, MongoDB, Gemini API, Monaco Editor.
+- **Repository:** [CodeForge AI](https://github.com/ruthvikamburay/codeforge-AI)
+
+### 6. Intelligent Job Application Automation Engine (IJAAE)
+
+A job application automation project combining semantic job matching, document processing, application assistance, and browser automation with human review.
+
+- **Technologies:** React, Vite, Node.js, Express.js, Prisma, Python, FastAPI, FAISS, Sentence Transformers.
+- **Repository:** [Job Automation Engine](https://github.com/nikhhh12/Job-automation-engine)
+
+### 7. TaskPulse
+
+A full-stack task management application featuring task creation, filtering, pagination, and task analytics.
+
+- **Technologies:** React, Vite, JavaScript, Node.js, Express.js, MongoDB, JWT.
+- **Repository:** [TaskPulse](https://github.com/nikhhh12/taskmanager)
+
+### 8. Ultimate Graph Visualizer
+
+An interactive algorithm visualization tool for exploring graph traversal, shortest-path algorithms, and maze generation.
+
+- **Technologies:** HTML, CSS, JavaScript, SVG.
+- **Algorithms:** BFS, DFS, Dijkstra's algorithm, A*, bidirectional search, Prim's algorithm, and recursive backtracking maze generation.
+- **Repository:** [Ultimate Graph Visualizer](https://github.com/nikhhh12/ultimate-graph-visualizer)
+- **Live Demo:** [Try the Graph Visualizer](https://ultimate-visualizer.netlify.app/)
 
 ---
 
-## 🌐 Deploying to Netlify
+## 🧑‍💻 Professional Experience
 
-This project includes a pre-configured [`netlify.toml`](file:///Users/nikhilkshirasagar/portfolio/netlify.toml).
+### Software Developer Intern — DineGo Technologies
 
-### Option A: Connect GitHub Repository (Recommended)
-1. Push your repository to GitHub:
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: complete portfolio for Nikhil Kshirasagar"
-   git branch -M main
-   git remote add origin https://github.com/nikhhh12/portfolio.git
-   git push -u origin main
-   ```
-2. Log in to [Netlify](https://app.netlify.com/).
-3. Click **Add new site** > **Import an existing project** > **GitHub**.
-4. Select your portfolio repository. Netlify will auto-detect the build configuration:
-   - **Build command:** `npm run build`
-   - **Publish directory:** `dist`
-5. Click **Deploy Site**.
+**May 2025 – July 2025 | Hyderabad, India**
 
-### Option B: Netlify CLI
-```bash
-npm install -g netlify-cli
-netlify login
-netlify deploy --prod
+- Developed backend application functionality and REST APIs.
+- Worked with SQL databases, data validation, and API integration.
+- Used Git for version control and collaborated through Agile development practices.
+
+### Community Leadership — Codeoholics
+
+**Vice President | March 2025 – July 2026**
+
+- Contributed to technical community activities and peer learning.
+- Supported collaboration and student engagement around programming and software development.
+
+---
+
+## ✏️ Customization Guide
+
+### 1. Update Portfolio Content
+
+Portfolio content is maintained in:
+
+`src/data/portfolio.js`
+
+Use this file to update supported configuration fields, such as:
+
+- Personal details and professional title.
+- Skills and technologies.
+- Project descriptions, technology stacks, and repository links.
+- Experience and leadership history.
+- Education details and social profile URLs.
+
+Check the existing data structure before adding or renaming fields.
+
+### 2. Update the Resume
+
+Replace the existing resume PDF with your updated document at:
+
+```text
+public/resume/Nikhil_Kshirasagar_Resume.pdf
 ```
+
+If the implementation also uses `public/Nikhil_Kshirasagar_Resume.pdf`, keep both copies synchronized or update the components to use one consistent path.
+
+### 3. Update Project Previews
+
+Project preview images are stored in:
+
+```text
+public/images/projects/
+```
+
+To replace a preview:
+
+1. Add the new image to the directory.
+2. Update the corresponding project's image path in `src/data/portfolio.js`.
+3. Run the development server and verify the preview.
+
+### 4. Configure the Contact Form
+
+The contact form is configured in the existing Contact component. Review its implementation before changing the submission provider or destination email.
+
+If EmailJS is used, configure the required environment variables in a local `.env` file using `.env.example` as a template.
+
+Never commit actual API keys, private credentials, or secret environment variables to GitHub.
+
+---
+
+## 🌐 Deployment on Netlify
+
+The portfolio is hosted on Netlify:
+
+**Live Website:** [https://nikhil-kshirasagar-portfolio.netlify.app/](https://nikhil-kshirasagar-portfolio.netlify.app/)
+
+### Build Configuration
+
+| Setting | Value |
+| :--- | :--- |
+| **Build command** | `npm run build` |
+| **Publish directory** | `dist` |
+| **Deployment branch** | `main` |
+
+### Deploy Using GitHub
+
+The repository can be connected to Netlify for automatic deployments.
+
+1. Push changes to the configured GitHub repository.
+2. Open the project in the [Netlify dashboard](https://app.netlify.com/).
+3. Confirm the repository and deployment branch are correct.
+4. Netlify builds the project and publishes the generated `dist/` directory.
+
+For future changes:
+
+```bash
+git add .
+git commit -m "Update portfolio"
+git push
+```
+
+If GitHub-based continuous deployment is configured, Netlify will rebuild and publish the updated site automatically.
+
+---
+
+## 📬 Connect With Me
+
+- **Portfolio:** [nikhil-kshirasagar-portfolio.netlify.app](https://nikhil-kshirasagar-portfolio.netlify.app/)
+- **GitHub:** [github.com/nikhhh12](https://github.com/nikhhh12)
+- **LinkedIn:** [linkedin.com/in/nikhil-kshirasagar08](https://www.linkedin.com/in/nikhil-kshirasagar08/)
+- **LeetCode:** [leetcode.com/u/nikhTheguru](https://leetcode.com/u/nikhTheguru/)
 
 ---
 
 ## 📄 License
 
-Created by **Nikhil Kshirasagar**. All rights reserved.
+Created and maintained by **Nikhil Kshirasagar**.
+
+All rights reserved unless otherwise specified. Project source code is available in the linked repositories; refer to each repository for its applicable license.
