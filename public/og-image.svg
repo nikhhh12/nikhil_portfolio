@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070d"/>
+      <stop offset="50%" stop-color="#080d1a"/>
+      <stop offset="100%" stop-color="#040508"/>
+    </linearGradient>
+    <radialGradient id="cyanGlow" cx="20%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="purpleGlow" cx="80%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#cyanGlow)"/>
+  <rect width="1200" height="630" fill="url(#purpleGlow)"/>
+
+  <!-- Border Card -->
+  <rect x="40" y="40" width="1120" height="550" rx="24" fill="#0b0e18" fill-opacity="0.65" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+
+  <!-- Logo/Badge -->
+  <g transform="translate(90, 90)">
+    <rect width="56" height="56" rx="16" fill="#111827" stroke="url(#brandGrad)" stroke-width="1.5"/>
+    <text x="28" y="37" font-family="Inter, -apple-system, sans-serif" font-weight="900" font-size="24" text-anchor="middle" fill="#ffffff">NK</text>
+  </g>
+
+  <text x="165" y="125" font-family="Inter, -apple-system, sans-serif" font-weight="700" font-size="20" fill="#22d3ee" letter-spacing="3">SOFTWARE ENGINEER PORTFOLIO</text>
+
+  <!-- Name -->
+  <text x="90" y="240" font-family="Inter, -apple-system, sans-serif" font-weight="800" font-size="64" fill="#ffffff" letter-spacing="-1">Nikhil Kshirasagar</text>
+
+  <!-- Headline -->
+  <text x="90" y="305" font-family="Inter, -apple-system, sans-serif" font-weight="600" font-size="28" fill="#cbd5e1">Backend &amp; Full-Stack Development | AI-Integrated Applications</text>
+
+  <!-- Description -->
+  <text x="90" y="370" font-family="Inter, -apple-system, sans-serif" font-weight="400" font-size="20" fill="#94a3b8">B.Tech Computer Science graduate building scalable Java, Spring Boot 3 &amp; React systems</text>
+  <text x="90" y="402" font-family="Inter, -apple-system, sans-serif" font-weight="400" font-size="20" fill="#94a3b8">with Redis caching, RAG vector pipelines, and production REST APIs.</text>
+
+  <!-- Pills -->
+  <g transform="translate(90, 470)">
+    <rect x="0" y="0" width="165" height="42" rx="21" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)"/>
+    <text x="82" y="26" font-family="Inter, sans-serif" font-weight="600" font-size="15" text-anchor="middle" fill="#e2e8f0">Java 17 &amp; Spring Boot</text>
+
+    <rect x="180" y="0" width="140" height="42" rx="21" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)"/>
+    <text x="250" y="26" font-family="Inter, sans-serif" font-weight="600" font-size="15" text-anchor="middle" fill="#e2e8f0">React &amp; Next.js</text>
+
+    <rect x="335" y="0" width="160" height="42" rx="21" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)"/>
+    <text x="415" y="26" font-family="Inter, sans-serif" font-weight="600" font-size="15" text-anchor="middle" fill="#e2e8f0">Redis &amp; PostgreSQL</text>
+
+    <rect x="510" y="0" width="175" height="42" rx="21" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)"/>
+    <text x="597" y="26" font-family="Inter, sans-serif" font-weight="600" font-size="15" text-anchor="middle" fill="#e2e8f0">Spring AI &amp; Chroma</text>
+
+    <rect x="700" y="0" width="170" height="42" rx="21" fill="rgba(34,211,238,0.12)" stroke="rgba(34,211,238,0.3)"/>
+    <text x="785" y="26" font-family="Inter, sans-serif" font-weight="600" font-size="15" text-anchor="middle" fill="#22d3ee">Hyderabad, India</text>
+  </g>
+</svg>

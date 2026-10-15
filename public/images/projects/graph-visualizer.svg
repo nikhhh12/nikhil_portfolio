@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="ugvBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1c"/>
+      <stop offset="100%" stop-color="#04060e"/>
+    </linearGradient>
+    <radialGradient id="frontierGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#ugvBg)"/>
+  
+  <!-- Window Header -->
+  <rect x="0" y="0" width="800" height="40" fill="#0d1424" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="24" cy="20" r="5" fill="#ef4444"/>
+  <circle cx="40" cy="20" r="5" fill="#f59e0b"/>
+  <circle cx="56" cy="20" r="5" fill="#10b981"/>
+  <text x="80" y="24" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#94a3b8">Ultimate Graph Visualizer — Interactive Algorithm Explorer</text>
+  <rect x="680" y="10" width="100" height="22" rx="11" fill="#10b981" fill-opacity="0.2" stroke="#10b981" stroke-width="1"/>
+  <text x="696" y="25" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#34d399">Live Deployed</text>
+
+  <!-- Controls / Algorithm Toolbar -->
+  <g transform="translate(20, 52)">
+    <rect width="760" height="46" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+    
+    <!-- Algorithm Selection Pills -->
+    <rect x="12" y="8" width="90" height="30" rx="6" fill="#06b6d4" fill-opacity="0.2" stroke="#06b6d4" stroke-width="1"/>
+    <text x="26" y="27" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#22d3ee">A* Search</text>
+
+    <rect x="110" y="8" width="80" height="30" rx="6" fill="#1e293b" fill-opacity="0.5"/>
+    <text x="126" y="27" font-family="Inter, sans-serif" font-size="11" fill="#94a3b8">Dijkstra</text>
+
+    <rect x="198" y="8" width="60" height="30" rx="6" fill="#1e293b" fill-opacity="0.5"/>
+    <text x="216" y="27" font-family="Inter, sans-serif" font-size="11" fill="#94a3b8">BFS</text>
+
+    <rect x="266" y="8" width="60" height="30" rx="6" fill="#1e293b" fill-opacity="0.5"/>
+    <text x="284" y="27" font-family="Inter, sans-serif" font-size="11" fill="#94a3b8">DFS</text>
+
+    <rect x="334" y="8" width="105" height="30" rx="6" fill="#1e293b" fill-opacity="0.5"/>
+    <text x="344" y="27" font-family="Inter, sans-serif" font-size="11" fill="#94a3b8">Bidirectional</text>
+
+    <!-- Maze Dropdown / Option -->
+    <rect x="450" y="8" width="130" height="30" rx="6" fill="#1e293b" fill-opacity="0.5"/>
+    <text x="460" y="27" font-family="Inter, sans-serif" font-size="10.5" fill="#f8fafc">Prim's Maze Gen</text>
+
+    <!-- Clear / Visualize Action -->
+    <rect x="635" y="8" width="112" height="30" rx="6" fill="#059669"/>
+    <text x="655" y="27" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#ffffff">Visualize!</text>
+  </g>
+
+  <!-- Interactive Grid Canvas Simulation -->
+  <g transform="translate(20, 110)">
+    <rect width="760" height="280" rx="8" fill="#050813" stroke="#1e293b" stroke-width="1"/>
+
+    <!-- Grid lines simulation (vertical and horizontal) -->
+    <path d="M 20 40 L 740 40 M 20 80 L 740 80 M 20 120 L 740 120 M 20 160 L 740 160 M 20 200 L 740 200 M 20 240 L 740 240" stroke="#0e1726" stroke-width="1"/>
+    <path d="M 60 20 L 60 260 M 120 20 L 120 260 M 180 20 L 180 260 M 240 20 L 240 260 M 300 20 L 300 260 M 360 20 L 360 260 M 420 20 L 420 260 M 480 20 L 480 260 M 540 20 L 540 260 M 600 20 L 600 260 M 660 20 L 660 260" stroke="#0e1726" stroke-width="1"/>
+
+    <!-- Glow around explored frontier -->
+    <circle cx="360" cy="140" r="130" fill="url(#frontierGlow)"/>
+
+    <!-- Visited Cells Cluster (Cyan / Violet) -->
+    <rect x="180" y="80" width="36" height="36" rx="4" fill="#0891b2" fill-opacity="0.4" stroke="#22d3ee" stroke-width="1"/>
+    <rect x="220" y="80" width="36" height="36" rx="4" fill="#0891b2" fill-opacity="0.5" stroke="#22d3ee" stroke-width="1"/>
+    <rect x="260" y="80" width="36" height="36" rx="4" fill="#0891b2" fill-opacity="0.6" stroke="#22d3ee" stroke-width="1"/>
+    <rect x="180" y="120" width="36" height="36" rx="4" fill="#0891b2" fill-opacity="0.5" stroke="#22d3ee" stroke-width="1"/>
+    <rect x="220" y="120" width="36" height="36" rx="4" fill="#0891b2" fill-opacity="0.7" stroke="#22d3ee" stroke-width="1"/>
+    <rect x="260" y="120" width="36" height="36" rx="4" fill="#0891b2" fill-opacity="0.8" stroke="#22d3ee" stroke-width="1"/>
+    <rect x="300" y="120" width="36" height="36" rx="4" fill="#0891b2" fill-opacity="0.6" stroke="#22d3ee" stroke-width="1"/>
+    <rect x="340" y="120" width="36" height="36" rx="4" fill="#0891b2" fill-opacity="0.5" stroke="#22d3ee" stroke-width="1"/>
+    <rect x="380" y="120" width="36" height="36" rx="4" fill="#0891b2" fill-opacity="0.4" stroke="#22d3ee" stroke-width="1"/>
+    
+    <rect x="260" y="160" width="36" height="36" rx="4" fill="#0891b2" fill-opacity="0.6" stroke="#22d3ee" stroke-width="1"/>
+    <rect x="300" y="160" width="36" height="36" rx="4" fill="#0891b2" fill-opacity="0.7" stroke="#22d3ee" stroke-width="1"/>
+    <rect x="340" y="160" width="36" height="36" rx="4" fill="#0891b2" fill-opacity="0.8" stroke="#22d3ee" stroke-width="1"/>
+    <rect x="380" y="160" width="36" height="36" rx="4" fill="#0891b2" fill-opacity="0.7" stroke="#22d3ee" stroke-width="1"/>
+    <rect x="420" y="160" width="36" height="36" rx="4" fill="#0891b2" fill-opacity="0.5" stroke="#22d3ee" stroke-width="1"/>
+    <rect x="460" y="160" width="36" height="36" rx="4" fill="#0891b2" fill-opacity="0.4" stroke="#22d3ee" stroke-width="1"/>
+
+    <rect x="420" y="120" width="36" height="36" rx="4" fill="#0891b2" fill-opacity="0.5" stroke="#22d3ee" stroke-width="1"/>
+    <rect x="460" y="120" width="36" height="36" rx="4" fill="#0891b2" fill-opacity="0.7" stroke="#22d3ee" stroke-width="1"/>
+    <rect x="500" y="120" width="36" height="36" rx="4" fill="#0891b2" fill-opacity="0.6" stroke="#22d3ee" stroke-width="1"/>
+    <rect x="540" y="120" width="36" height="36" rx="4" fill="#0891b2" fill-opacity="0.5" stroke="#22d3ee" stroke-width="1"/>
+
+    <!-- Maze / Wall Obstacles (Dark Slate) -->
+    <rect x="300" y="40" width="36" height="36" rx="3" fill="#1e293b"/>
+    <rect x="300" y="80" width="36" height="36" rx="3" fill="#1e293b"/>
+    <rect x="380" y="80" width="36" height="36" rx="3" fill="#1e293b"/>
+    <rect x="420" y="80" width="36" height="36" rx="3" fill="#1e293b"/>
+    <rect x="420" y="40" width="36" height="36" rx="3" fill="#1e293b"/>
+    <rect x="340" y="200" width="36" height="36" rx="3" fill="#1e293b"/>
+    <rect x="380" y="200" width="36" height="36" rx="3" fill="#1e293b"/>
+    <rect x="420" y="200" width="36" height="36" rx="3" fill="#1e293b"/>
+
+    <!-- Shortest Path Highlight (Gold Trail) -->
+    <path d="M 100 138 L 138 138 L 198 138 L 238 98 L 278 98 L 278 138 L 318 138 L 358 178 L 438 178 L 478 138 L 518 138 L 578 138 L 620 138" fill="none" stroke="#fbbf24" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Start Node (Green Circle) -->
+    <circle cx="100" cy="138" r="16" fill="#10b981"/>
+    <text x="95" y="143" font-family="Inter, sans-serif" font-size="13" font-weight="800" fill="#ffffff">S</text>
+    
+    <!-- End Node / Target (Red Target) -->
+    <circle cx="620" cy="138" r="16" fill="#ef4444"/>
+    <circle cx="620" cy="138" r="8" fill="#ffffff"/>
+    <circle cx="620" cy="138" r="3" fill="#ef4444"/>
+
+    <!-- Legend Overlay -->
+    <g transform="translate(20, 230)">
+      <rect width="720" height="36" rx="6" fill="#080c18" stroke="#1e293b" stroke-width="1"/>
+      <circle cx="20" cy="18" r="6" fill="#10b981"/>
+      <text x="32" y="22" font-family="Inter, sans-serif" font-size="10" fill="#cbd5e1">Start Node</text>
+
+      <circle cx="110" cy="18" r="6" fill="#ef4444"/>
+      <text x="122" y="22" font-family="Inter, sans-serif" font-size="10" fill="#cbd5e1">Target Node</text>
+
+      <rect x="200" y="12" width="12" height="12" rx="2" fill="#0891b2"/>
+      <text x="218" y="22" font-family="Inter, sans-serif" font-size="10" fill="#cbd5e1">Visited Frontier</text>
+
+      <rect x="315" y="12" width="12" height="12" rx="2" fill="#1e293b"/>
+      <text x="333" y="22" font-family="Inter, sans-serif" font-size="10" fill="#cbd5e1">Wall / Obstacle</text>
+
+      <line x1="425" y1="18" x2="445" y2="18" stroke="#fbbf24" stroke-width="3"/>
+      <text x="453" y="22" font-family="Inter, sans-serif" font-size="10" fill="#fbbf24">Optimal Path (28 steps)</text>
+
+      <text x="590" y="22" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#38bdf8">142 Nodes Evaluated · 18ms</text>
+    </g>
+  </g>
+
+  <!-- Bottom Details Bar -->
+  <g transform="translate(20, 400)">
+    <text x="10" y="22" font-family="Inter, sans-serif" font-size="11" fill="#94a3b8">Interactive Graph &amp; Grid Modes · Start &amp; Target Drag-and-Drop · Pure Vanilla JavaScript, HTML5 &amp; CSS3</text>
+  </g>
+</svg>

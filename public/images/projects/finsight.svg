@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="finBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070c14"/>
+      <stop offset="100%" stop-color="#020407"/>
+    </linearGradient>
+    <linearGradient id="finChart" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#finBg)"/>
+
+  <!-- Window Header -->
+  <rect x="0" y="0" width="800" height="40" fill="#0b1322" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="24" cy="20" r="5" fill="#ef4444"/>
+  <circle cx="40" cy="20" r="5" fill="#f59e0b"/>
+  <circle cx="56" cy="20" r="5" fill="#10b981"/>
+  <text x="80" y="24" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#94a3b8">FinSight — Financial Data Aggregator &amp; Equity Tracker</text>
+
+  <!-- Left: Watchlist Stream -->
+  <g transform="translate(20, 55)">
+    <rect width="230" height="375" rx="8" fill="#0b111e" stroke="#1e293b" stroke-width="1"/>
+    <text x="16" y="28" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#38bdf8" letter-spacing="1">PERSISTENT WATCHLIST</text>
+
+    <!-- Row 1 -->
+    <rect x="12" y="44" width="206" height="48" rx="6" fill="#131c2e"/>
+    <text x="24" y="68" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#ffffff">AAPL</text>
+    <text x="24" y="82" font-family="Inter, sans-serif" font-size="10" fill="#64748b">Apple Inc.</text>
+    <text x="150" y="68" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#10b981">$189.45</text>
+    <text x="150" y="82" font-family="Inter, sans-serif" font-size="10" fill="#10b981">+1.84%</text>
+
+    <!-- Row 2 -->
+    <rect x="12" y="98" width="206" height="48" rx="6" fill="#0e1726"/>
+    <text x="24" y="122" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#ffffff">NVDA</text>
+    <text x="24" y="136" font-family="Inter, sans-serif" font-size="10" fill="#64748b">NVIDIA Corp.</text>
+    <text x="150" y="122" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#10b981">$875.28</text>
+    <text x="150" y="136" font-family="Inter, sans-serif" font-size="10" fill="#10b981">+4.22%</text>
+
+    <!-- Row 3 -->
+    <rect x="12" y="152" width="206" height="48" rx="6" fill="#0e1726"/>
+    <text x="24" y="176" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#ffffff">MSFT</text>
+    <text x="24" y="190" font-family="Inter, sans-serif" font-size="10" fill="#64748b">Microsoft</text>
+    <text x="150" y="176" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#10b981">$428.10</text>
+    <text x="150" y="190" font-family="Inter, sans-serif" font-size="10" fill="#10b981">+0.95%</text>
+
+    <!-- Inngest badge -->
+    <rect x="12" y="325" width="206" height="36" rx="6" fill="#1e293b" fill-opacity="0.5"/>
+    <text x="24" y="347" font-family="Inter, sans-serif" font-size="10" fill="#94a3b8">Sync: Inngest Scheduled Cron</text>
+  </g>
+
+  <!-- Right: Stock Detail & Chart -->
+  <g transform="translate(265, 55)">
+    <rect width="515" height="250" rx="8" fill="#0b111e" stroke="#1e293b" stroke-width="1"/>
+    
+    <text x="20" y="32" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Apple Inc. (AAPL)</text>
+    <text x="20" y="52" font-family="Inter, sans-serif" font-size="11" fill="#64748b">NASDAQ · Finnhub Real-time Market Data</text>
+    
+    <text x="400" y="34" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#10b981">$189.45</text>
+    <text x="415" y="52" font-family="Inter, sans-serif" font-size="11" fill="#10b981">+3.42 (1.84%)</text>
+
+    <!-- Chart -->
+    <path d="M 25 210 L 80 180 L 140 190 L 200 150 L 260 165 L 320 120 L 380 130 L 440 90 L 490 80 L 490 225 L 25 225 Z" fill="url(#finChart)"/>
+    <path d="M 25 210 L 80 180 L 140 190 L 200 150 L 260 165 L 320 120 L 380 130 L 440 90 L 490 80" fill="none" stroke="#10b981" stroke-width="2.5"/>
+  </g>
+
+  <!-- Price Alert & Tech Stack -->
+  <g transform="translate(265, 320)">
+    <rect width="250" height="110" rx="8" fill="#0b111e" stroke="#1e293b" stroke-width="1"/>
+    <text x="16" y="28" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#f8fafc">Price Alert Engine</text>
+    <text x="16" y="50" font-family="Inter, sans-serif" font-size="11" fill="#94a3b8">Trigger: AAPL &gt; $190.00</text>
+    <text x="16" y="70" font-family="Inter, sans-serif" font-size="11" fill="#38bdf8">Dispatch: Nodemailer Dispatch</text>
+    <text x="16" y="90" font-family="Inter, sans-serif" font-size="11" fill="#10b981">Status: Active evaluation</text>
+
+    <rect x="260" y="0" width="255" height="110" rx="8" fill="#0b111e" stroke="#1e293b" stroke-width="1"/>
+    <text x="276" y="28" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#f8fafc">Core Architecture</text>
+    <text x="276" y="50" font-family="Inter, sans-serif" font-size="11" fill="#94a3b8">• Next.js 14 App Router + TypeScript</text>
+    <text x="276" y="70" font-family="Inter, sans-serif" font-size="11" fill="#94a3b8">• MongoDB persistent user watchlists</text>
+    <text x="276" y="90" font-family="Inter, sans-serif" font-size="11" fill="#94a3b8">• Inngest asynchronous background jobs</text>
+  </g>
+</svg>

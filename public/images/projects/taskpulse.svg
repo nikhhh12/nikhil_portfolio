@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="tpBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e18"/>
+      <stop offset="100%" stop-color="#04060b"/>
+    </linearGradient>
+    <linearGradient id="progGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#tpBg)"/>
+  
+  <!-- Window Header -->
+  <rect x="0" y="0" width="800" height="40" fill="#0d1422" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="24" cy="20" r="5" fill="#ef4444"/>
+  <circle cx="40" cy="20" r="5" fill="#f59e0b"/>
+  <circle cx="56" cy="20" r="5" fill="#10b981"/>
+  <text x="80" y="24" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#94a3b8">TaskPulse — Full-Stack Task Management System</text>
+  <rect x="670" y="10" width="110" height="22" rx="11" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="1"/>
+  <text x="686" y="25" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#34d399">JWT Auth + DB</text>
+
+  <!-- Top Metrics / Analytics Dashboard -->
+  <g transform="translate(20, 54)">
+    <!-- Metric 1: Total Tasks -->
+    <rect width="175" height="66" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+    <text x="16" y="24" font-family="Inter, sans-serif" font-size="10" fill="#94a3b8">Total Tasks</text>
+    <text x="16" y="50" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#ffffff">24</text>
+    <text x="54" y="50" font-family="Inter, sans-serif" font-size="10" fill="#64748b">Indexed queries</text>
+
+    <!-- Metric 2: Completed Tasks -->
+    <rect x="190" y="0" width="175" height="66" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+    <text x="206" y="24" font-family="Inter, sans-serif" font-size="10" fill="#94a3b8">Completed</text>
+    <text x="206" y="50" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#34d399">18 <tspan font-size="11" fill="#94a3b8">(75%)</tspan></text>
+
+    <!-- Metric 3: Pending -->
+    <rect x="380" y="0" width="175" height="66" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+    <text x="396" y="24" font-family="Inter, sans-serif" font-size="10" fill="#94a3b8">In Progress / Todo</text>
+    <text x="396" y="50" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#38bdf8">6</text>
+
+    <!-- Metric 4: Progress Bar Card -->
+    <rect x="570" y="0" width="210" height="66" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+    <text x="586" y="24" font-family="Inter, sans-serif" font-size="10" fill="#94a3b8">Sprint Completion Rate</text>
+    <rect x="586" y="38" width="178" height="10" rx="5" fill="#1e293b"/>
+    <rect x="586" y="38" width="134" height="10" rx="5" fill="url(#progGrad)"/>
+  </g>
+
+  <!-- Filter & Search Toolbar -->
+  <g transform="translate(20, 130)">
+    <rect width="760" height="42" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+    
+    <!-- Search Bar -->
+    <rect x="12" y="7" width="200" height="28" rx="6" fill="#040711" stroke="#1e293b" stroke-width="1"/>
+    <text x="24" y="25" font-family="Inter, sans-serif" font-size="10" fill="#64748b">Search tasks...</text>
+
+    <!-- Status Filter Pills -->
+    <rect x="225" y="9" width="45" height="24" rx="12" fill="#1e293b"/>
+    <text x="238" y="25" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#f8fafc">All</text>
+    
+    <rect x="276" y="9" width="55" height="24" rx="12" fill="#1e293b" fill-opacity="0.4"/>
+    <text x="286" y="25" font-family="Inter, sans-serif" font-size="10" fill="#94a3b8">Todo (2)</text>
+    
+    <rect x="337" y="9" width="85" height="24" rx="12" fill="#1e293b" fill-opacity="0.4"/>
+    <text x="347" y="25" font-family="Inter, sans-serif" font-size="10" fill="#94a3b8">In Progress (4)</text>
+    
+    <rect x="428" y="9" width="70" height="24" rx="12" fill="#1e293b" fill-opacity="0.4"/>
+    <text x="438" y="25" font-family="Inter, sans-serif" font-size="10" fill="#94a3b8">Done (18)</text>
+
+    <!-- Sort & Theme Toggle -->
+    <text x="590" y="25" font-family="Inter, sans-serif" font-size="10" fill="#64748b">Sort: Due Date (Asc)</text>
+    <rect x="696" y="9" width="52" height="24" rx="12" fill="#040711" stroke="#1e293b" stroke-width="1"/>
+    <text x="708" y="25" font-family="Inter, sans-serif" font-size="10" fill="#f59e0b">Dark</text>
+  </g>
+
+  <!-- Task Cards Grid -->
+  <g transform="translate(20, 184)">
+    <!-- Task Card 1: Done -->
+    <rect width="240" height="180" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+    <rect x="14" y="14" width="60" height="20" rx="10" fill="#10b981" fill-opacity="0.2"/>
+    <text x="24" y="28" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#34d399">DONE</text>
+    <rect x="180" y="14" width="46" height="20" rx="10" fill="#ef4444" fill-opacity="0.2"/>
+    <text x="188" y="28" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#f87171">High</text>
+    
+    <text x="14" y="58" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Implement JWT Auth</text>
+    <text x="14" y="76" font-family="Inter, sans-serif" font-size="10" fill="#94a3b8">Setup bcrypt password hashing</text>
+    <text x="14" y="92" font-family="Inter, sans-serif" font-size="10" fill="#94a3b8">and secure cookie / token claims.</text>
+    
+    <rect x="14" y="136" width="212" height="30" rx="6" fill="#040711" stroke="#1e293b" stroke-width="1"/>
+    <text x="24" y="155" font-family="Inter, sans-serif" font-size="10" fill="#64748b">Due: Oct 20 · Mongoose Index</text>
+
+    <!-- Task Card 2: In Progress -->
+    <g transform="translate(260, 0)">
+      <rect width="240" height="180" rx="8" fill="#0b1120" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.4"/>
+      <rect x="14" y="14" width="85" height="20" rx="10" fill="#38bdf8" fill-opacity="0.2"/>
+      <text x="22" y="28" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#38bdf8">IN PROGRESS</text>
+      <rect x="175" y="14" width="51" height="20" rx="10" fill="#f59e0b" fill-opacity="0.2"/>
+      <text x="183" y="28" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#fbbf24">Med</text>
+      
+      <text x="14" y="58" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Compound Indexes</text>
+      <text x="14" y="76" font-family="Inter, sans-serif" font-size="10" fill="#94a3b8">Optimize { user: 1, status: 1 }</text>
+      <text x="14" y="92" font-family="Inter, sans-serif" font-size="10" fill="#94a3b8">and text search on title field.</text>
+      
+      <rect x="14" y="136" width="212" height="30" rx="6" fill="#040711" stroke="#1e293b" stroke-width="1"/>
+      <text x="24" y="155" font-family="Inter, sans-serif" font-size="10" fill="#38bdf8">Due: Oct 24 · Sub-millisecond</text>
+    </g>
+
+    <!-- Task Card 3: In Progress / Todo -->
+    <g transform="translate(520, 0)">
+      <rect width="240" height="180" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+      <rect x="14" y="14" width="60" height="20" rx="10" fill="#64748b" fill-opacity="0.2"/>
+      <text x="26" y="28" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#94a3b8">TODO</text>
+      <rect x="180" y="14" width="46" height="20" rx="10" fill="#34d399" fill-opacity="0.2"/>
+      <text x="190" y="28" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#34d399">Low</text>
+      
+      <text x="14" y="58" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Pagination Controls</text>
+      <text x="14" y="76" font-family="Inter, sans-serif" font-size="10" fill="#94a3b8">Add dynamic limit &amp; skip cursors</text>
+      <text x="14" y="92" font-family="Inter, sans-serif" font-size="10" fill="#94a3b8">with total count aggregation.</text>
+      
+      <rect x="14" y="136" width="212" height="30" rx="6" fill="#040711" stroke="#1e293b" stroke-width="1"/>
+      <text x="24" y="155" font-family="Inter, sans-serif" font-size="10" fill="#64748b">Due: Oct 28 · Page 1 of 4</text>
+    </g>
+  </g>
+
+  <!-- Bottom: MongoDB & Server Engine Banner -->
+  <g transform="translate(20, 376)">
+    <rect width="760" height="54" rx="8" fill="#040711" stroke="#1e293b" stroke-width="1"/>
+    <text x="20" y="32" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#cbd5e1">Backend Engine: Node.js / Express · Mongoose ORM · Centralized Error Middleware</text>
+    <text x="560" y="32" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#10b981">In-Memory MongoDB Fallback</text>
+  </g>
+</svg>
