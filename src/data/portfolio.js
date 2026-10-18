@@ -258,7 +258,7 @@ export const projects = [
     description:
       'An enterprise-grade inventory management platform designed to handle product and warehouse operations, stock transfers, purchase orders, receiving workflows, inventory synchronization, and transaction audit logs.',
     githubUrl: 'https://github.com/nikhhh12/stockpilot',
-    liveUrl: '',
+    liveUrl: 'https://stockpilot-three-olive.vercel.app/',
     image: '/images/projects/stockpilot.svg',
     icon: Boxes,
     metric: 'Enterprise Backend + AI',
